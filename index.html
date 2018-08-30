@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <title>JS Isuue Tracker</title>
+</head>
+
+<body onload="fetchIssues()">
+
+    <div class="container">
+        <h1>JS Issue Tracker
+            <small>by MMK</small>
+        </h1>
+        <div class="jumbotron">
+            <h3>Add New Issue:</h3>
+            <form action="" id="issueInputForm">
+                <div class="form-group">
+                    <label for="issueDescInput">Description</label>
+                    <input type="text" class="form-control" id="issueDescInput" placeholder="Describe the issue">
+                </div>
+                <div class="form-group">
+                    <label for="issueSeverityInput">Severity</label>
+                    <select name="" id="issueSeverityInput" class="form-control">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="issueAssignedToInput">Assigned To</label>
+                    <input type="text" class="form-control" id="issueAssignedToInput" placeholder="Enter responsible...">
+                </div>
+                <button class="btn btn-primary" type="submit">Add</button>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="issuesList"></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy M.Maruf Khan</p>
+        </div>
+    </div>
+
+
+
+
+    <!-- Chance for generating random number  -->
+    <script src="https://chancejs.com/chance.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
