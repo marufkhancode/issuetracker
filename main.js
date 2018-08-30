@@ -15,7 +15,6 @@ function saveIssue(e) {
         assignedTo: issueAssignedTo,
         status: issueStatus
     }
-    console.log(issueDesc);
     // code to insert new object into local storage
     if (localStorage.getItem('issues') == null) {
         var issues = [];
