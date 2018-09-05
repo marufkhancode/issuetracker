@@ -1,5 +1,20 @@
+// disablebutton();
 // saving issue data to local storage after Form submit
 document.getElementById('issueInputForm').addEventListener('submit', saveIssue);
+// $('Button').prop('disabled', true);
+
+// function disablebutton() {
+//     var issueDesc = document.getElementById('issueDescInput').value;
+//     var issueSeverity = document.getElementById('issueSeverityInput').value;
+//     var issueAssignedTo = document.getElementById('issueAssignedToInput').value;
+//     if (issueDesc == "" && issueAssignedTo == "") {
+//         $('Button').prop('disabled', true);
+//         console.log('if');
+//     } else if (issueDesc !== "" && issueAssignedTo !== "") {
+//         console.log('Else');
+//         $('Button').prop('disabled', false);
+//     }
+// };
 
 function saveIssue(e) {
     var issueDesc = document.getElementById('issueDescInput').value;
